@@ -1,19 +1,10 @@
 # StateMachine
 
-**TODO: Add description**
+iex> StateMachine.Sender.send(123)  
+Request to send a packet received from application layer  
+Sending a packet: 123 from pid {#PID<0.111.0>, #Reference<0.0.6.767>}  
+Received a packet 123 from pid {#PID<0.110.0>, #Reference<0.0.6.775>}  
+Current receiver state is now WAITING FOR CONNECTION  
+Current sender state is now WAITING TO CONNECT  
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `state_machine` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:state_machine, "~> 0.1.0"}]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/state_machine](https://hexdocs.pm/state_machine).
-
+:ok
